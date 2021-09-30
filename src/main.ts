@@ -1,17 +1,10 @@
 import { createModuleResolutionCache } from "typescript";
 
-function MultiplyByLength(array:number[]){
-    for(var i =0; i<array.length; i++)
-        {
-            console.log(array[i]*array.length)
-        }
-        console.log("-----------");
+function IsPalindrome(word:string){
+    return word.split('').reverse().join('') === word;
 }
-var array1:number[];
-array1 = [2,3,1,0];
+ var word1 = "kayak";
+ var word2 = "car";
 
-var array2:number[];
-array2 = [4,1,1];
-
-MultiplyByLength(array1);
-MultiplyByLength(array2);
+ console.log("Is Word1 Palindrome: "+IsPalindrome(word1));
+ console.log("Is Word2 Palindrome: "+IsPalindrome(word2));
