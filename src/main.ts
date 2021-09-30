@@ -1,10 +1,16 @@
 import { createModuleResolutionCache } from "typescript";
 
-function IsPalindrome(word:string){
-    return word.split('').reverse().join('') === word;
+function CaptureTheRook(rook:string[]){
+    if(rook[0].charAt(0) == rook[1].charAt(0) || rook[0].charAt(1) == rook[1].charAt(1))
+    {
+        return true;
+    }
+    else{
+        return false;
+    }
 }
- var word1 = "kayak";
- var word2 = "car";
+var rooks1:string[] = ["A8", "E8"];
+var rooks2:string[] = ["A1", "B2"];
 
- console.log("Is Word1 Palindrome: "+IsPalindrome(word1));
- console.log("Is Word2 Palindrome: "+IsPalindrome(word2));
+ console.log("Result is: "+CaptureTheRook(rooks1));
+ console.log("Result is: "+CaptureTheRook(rooks2));
