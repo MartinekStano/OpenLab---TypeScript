@@ -1,20 +1,17 @@
-function sliceOfPie(totalNumberOfSlices, numberOfRecipients, numberOfSlicesEachPersonGets){
-    var helper = numberOfRecipients * numberOfSlicesEachPersonGets;
+import { createModuleResolutionCache } from "typescript";
 
-    if(helper <= totalNumberOfSlices)
+function MultiplyByLength(array:number[]){
+    for(var i =0; i<array.length; i++)
         {
-            return true;
-        }else{
-            return false;
+            console.log(array[i]*array.length)
         }
+        console.log("-----------");
 }
-var totalNumberOfSlices = 11;
-var numberOfRecipients = 5;
-var numberOfSlicesEachPersonGets = 2;
+var array1:number[];
+array1 = [2,3,1,0];
 
-var totalNumberOfSlices2 = 11;
-var numberOfRecipients2 = 5;
-var numberOfSlicesEachPersonGets2 = 3;
+var array2:number[];
+array2 = [4,1,1];
 
-console.log(sliceOfPie(totalNumberOfSlices, numberOfRecipients, numberOfSlicesEachPersonGets));
-console.log(sliceOfPie(totalNumberOfSlices2, numberOfRecipients2, numberOfSlicesEachPersonGets2));
+MultiplyByLength(array1);
+MultiplyByLength(array2);
