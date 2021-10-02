@@ -1,9 +1,18 @@
 {
-    "compilerOptions": {
-      "target": "es5",
+  "compilerOptions": {
       "module": "commonjs",
-      "sourceMap": true,
-      "rootDir": "src/",
-      "outDir": "dist/"
-    }
+      "target": "es6",
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "baseUrl": "../types",
+      "typeRoots": [
+          "../types"
+      ],
+      "types": [],
+      "forceConsistentCasingInFileNames": true,
+  }
 }
