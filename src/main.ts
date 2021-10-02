@@ -1,15 +1,18 @@
-var array1:number[] = [10,4,1,4,-10,-50,32,21];
-var array2:number[] = [44,32,86,19];
-function MaxMin(array:number[])
+var player1:string;
+var player2:string;
+function RockPaperScissors(player1:string, player2:string)
 {
-    var helper:number = 0;
-    var max:number = Math.max(...array);
-    var min:number = Math.min(...array);
-    helper = max - min;
-    console.log("The Biggest number is: "+max);
-    console.log("The Smallest number is: "+min);
-    console.log("Result is: "+helper);
+    if(player1.toLowerCase() == player2.toLowerCase())
+    {
+        console.log("TIE");
+    }else if(player1.toLowerCase() == "rock" && player2.toLowerCase() =="scissors" || player1.toLowerCase() == "scissors" && player2.toLowerCase() =="paper" || player1.toLowerCase() == "paper" && player2.toLowerCase() =="rock" )
+    {
+        console.log("Player 1 WIN!");
+    }else{
+        console.log("Player 2 WIN");
+    }
     
 }
-MaxMin(array1);
-MaxMin(array2);
+RockPaperScissors(player1 = "rock", player2="scissors");
+RockPaperScissors(player1 = "paper", player2 = "scissors");
+RockPaperScissors(player1 = "paper", player2 = "paper");
